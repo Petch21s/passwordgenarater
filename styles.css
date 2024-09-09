@@ -1,0 +1,123 @@
+/* ตั้งค่าเริ่มต้นสำหรับ body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    overflow: hidden;
+}
+
+/* การจัดวาง container */
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* การจัดวาง header */
+h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* การจัดวางส่วนของ generator */
+.generator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.generator label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.generator input[type="number"] {
+    width: 80px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+    transition: border 0.3s;
+}
+
+.generator input[type="number"]:focus {
+    border-color: #6b73ff;
+}
+
+/* ปุ่มสำหรับการสุ่มรหัสผ่าน */
+button {
+    padding: 12px 25px;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(135deg, #6b73ff, #000dff);
+    color: white;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 13, 255, 0.3);
+    margin-top: 10px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #000dff, #6b73ff);
+    box-shadow: 0 12px 20px rgba(0, 13, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+/* การจัดวางส่วนของผลลัพธ์ */
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.result input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: border 0.3s;
+}
+
+.result input[type="text"]:focus {
+    border-color: #6b73ff;
+}
+
+/* ปุ่มคัดลอก */
+.result button {
+    padding: 12px;
+    background: #00c851;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+    box-shadow: 0 8px 15px rgba(0, 200, 81, 0.3);
+}
+
+.result button:hover {
+    background: #007e33;
+    box-shadow: 0 12px 20px rgba(0, 200, 81, 0.5);
+    transform: translateY(-2px);
+}
